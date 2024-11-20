@@ -29,6 +29,7 @@
         padding: 0;
         font-family: Arial, sans-serif;
         background-color: #a39874;
+        
       }
 
       header {
@@ -73,14 +74,17 @@
       }
 
       nav a {
-        color: #fff;
-        text-decoration: none;
-        font-size: 18px;
-      }
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      display: inline-block;
+      transition: transform 0.3s ease, color 0.3s ease;
+}
 
       nav a:hover {
         color: #ccc;
-      }
+        transform: translateY(-5px);
+}
 
       .hero {
         text-align: center;
@@ -89,8 +93,10 @@
         background-image: url("cireng.jpg");
         background-size: cover;
         background-position: center;
+        height: 375px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
         position: relative;
+        
       }
 
       .hero h1 {
@@ -228,18 +234,90 @@
       .media-sosial i:hover {
         color: #ccc;
       }
+      .testimoni {
+      display: grid;
+      margin-left: 40px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 900px;
+      
+    }
+
+    .testi-kartu {
+      background-color: #ffffff;
+      border: 1px solid #e3e1dd;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .testi-kartu h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #d95b00;
+    }
+
+    .testi-kartu img {
+      width: 200px;
+      height:200px;
+      margin-bottom: 15px;
+    }
+
+    .testi {
+      font-size: 14px;
+      color: #555555;
+      margin-bottom: 15px;
+    }
+
+    .rating {
+      display: flex;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .rating span {
+      font-size: 18px;
+      color: #ffcc00;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #d95b00;
+    }
+      
+      .mapswrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+        width: 100%;
+        height: 300px;
+        gap: 20px;
+      }
+      
       .mapswrapper iframe {
-        border: 0;
-        position: relative;
-        z-index: 2;
+        box-shadow: 9px 7px 7px black;
+        border-radius: 20px;
+        width: 50%;
+        max-width: 600px;
+        height: 100%;
+        max-height: 300px;
       }
-      .mapswrapper a {
-        color: rgba(0, 0, 0, 0);
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 0;
-      }
+      
+      .mapswrapper h1 {
+        color: ghostwhite;
+        font-family: initial;
+        font-weight: 400 bold;
+        font-style: normal;
+        font-size: 65px;
+        -webkit-text-stroke: 0.5px black;
+        text-shadow: 0 5px 20px black;
+        max-width: 300px;
+}
     </style>
   </head>
 
@@ -315,21 +393,59 @@
             <a href="#" class="kartu-tombol-beli">Beli Sekarang</a>
           </div>
         </div>
-        <div class="mapswrapper">
-          <iframe
-            width="300"
-            height="300"
-            loading="lazy"
-            allowfullscreen
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Jl.Baladewa%2C%20kp%20sukamana%2CRT%2003%2F03%2C%20kode%20pos%20%3A41373%2C%20kecamatan%20cikampek%2C%20kabupaten%20karawang&zoom=10&maptype=satellite"
-          ></iframe
-          ><a href="https://www.lawod.com/roblox-peroxide-codes/"
-            >Roblox Peroxide Codes</a
-          >
-        </div>
+      </div>
+    </div>
+    <hr />
+    
+    <div class="testimoni">
+    <div class="testi-kartu">
+      <img src="donat.jpg" alt="Pp">
+      <h2>RATING CIRENG</h2>
+      <p class="testi">
+      </p>
+      <div class="rating">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+      </div>
+      <div class="icons">
+        <span>🍴</span><span>🍊</span><span>🌿</span>
+      </div>
+    </div>
+    <div class="testi-kartu">
+      <img src="donat.jpg" alt="Pp">
+      <h2>DESTIME</h2>
+      <p class="testi">
+        
+      </p>
+      <div class="rating">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+      </div>
+      <div class="icons">
+        <span>🍴</span><span>🍊</span><span>🌿</span>
       </div>
     </div>
 
+    <div class="testi-kartu">
+      <img src="donat.jpg" alt="Pp">
+      <h2>FAVORITE DESIGN</h2>
+      <p class="testi">
+        
+      </p>
+      <div class="rating">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+      </div>
+      <div class="icons">
+        <span>🍴</span><span>🍊</span><span>🌿</span>
+      </div>
+    </div>
+  </div>
+     <div class="mapswrapper">
+       <h1>ALAMAT PRODUKSI</h1>
+          <iframe
+            loading="lazy"
+            allowfullscreen
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Jl.Baladewa%2C%20kp%20sukamana%2CRT%2003%2F03%2C%20kode%20pos%20%3A41373%2C%20kecamatan%20cikampek%2C%20kabupaten%20karawang&zoom=10&maptype=satellite"
+          ></iframe>
+        </div>
     <footer>
       <p>&copy; punya kin.</p>
       <div class="media-sosial">
